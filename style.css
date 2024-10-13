@@ -86,6 +86,7 @@ a.name {
 }
 
 .nav-content a {
+    cursor: pointer;
     color: black;
     display: flex;
     align-items: center;
