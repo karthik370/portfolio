@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+15&family=Lexend:wght@100..900&family=Lugrasimo&display=swap');
+
+*{
+    margin: 0;;
+    padding: 0;
+}
+.main{
+    position: relative;
+    overflow: hidden;
+
+}
+.main-about{
+    overflow: hidden;
+    overflow-y: scroll;
+    color: white;
+    width: 100vw;
+    height:100vh;
+    margin-top: 80px;
+}
+.navbar{
+    position: fixed;
+    top: 0;
+}
+.main-about::-webkit-scrollbar {
+    width: 10px;
+    /* Set the width of the scrollbar */
+}
+
+/* Track (background) color */
+.main-about::-webkit-scrollbar-track {
+    background-color: #1a1a1a;
+    /* Dark background color for the track */
+}
+
+.main-about::-webkit-scrollbar-thumb {
+    background: #59415e;
+    /* Pale pink color for the thumb */
+    border-radius: 10px;
+    /* Rounded corners for the thumb */
+}
+
+.about-content{
+    margin-top: 5px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 600px;
+    display: flex;
+}
+strong{
+    color: #63a9bb;
+}
+.myinfo{
+    word-spacing: 4px;
+    line-height: 30px;
+    line-gap-override: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+    width: 60%;
+    height: 100%;
+}
+.info-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: 100%;
+}
+.info-image img{
+    width: 700px;
+    height: 400px;
+}
+.skills-there{
+    width: 100vw;
+    height: 900px;
+}
+.sk-head,.tools-head{
+    text-align: center;
+    font-size: 26px;
+}
+.icons-set{
+    margin-top: 30px;
+    width: 100%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+.icons svg{
+    width: 300px;
+    height: 150px;
+}
+.icons{
+    display: flex;
+    align-items: center;
+    width: 18%;
+    height: 19%;
+    border-radius: 10px;
+    border:2px solid beige ;
+    padding: 20px;
+}
+.icons:hover{
+    box-shadow: 0px 0px 10px seashell,0px 0px 8px seashell;
+width: 19%;
+height: 20%;
+    transition: all 0.5s ease 0s;
+}
+@media (max-width:490px) {
+    .main-about{
+        width: 145vw;
+        height: 145vh;
+        font-size: 30px;
+    }
+    .about-content{
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        gap: 140px;
+        width: 145vw;
+    }
+    .myinfo{
+        width: 140vw;
+    }
+    .skills-there{
+        margin-top: 320px;
+        width: 145vw;
+        height: 170vh;
+    }
+    footer{
+        margin-top: 25px;
+        position: relative;
+        bottom: 0;
+        padding: none;
+    }
+
+}

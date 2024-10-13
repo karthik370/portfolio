@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+15&family=Lexend:wght@100..900&family=Lugrasimo&display=swap');
+
+*{
+    margin: 0;;
+    padding: 0;
+}
+.main{
+    position: relative;
+    overflow: hidden;
+
+}
+.main-resume{
+    overflow: hidden;
+    overflow-y: scroll;
+    color: white;
+    width: 100vw;
+    height: 100vh;
+    margin-top: 80px;
+}
+.resume-content{
+    width: 100vw;
+    height: 2000px;
+}
+.main-resume::-webkit-scrollbar {
+    width: 10px;
+    /* Set the width of the scrollbar */
+}
+
+/* Track (background) color */
+.main-resume::-webkit-scrollbar-track {
+    background-color: #1a1a1a;
+    /* Dark background color for the track */
+}
+
+.main-resume::-webkit-scrollbar-thumb {
+    background: #59415e;
+    /* Pale pink color for the thumb */
+    border-radius: 10px;
+    /* Rounded corners for the thumb */
+}
+.download{
+    margin-top: 50px;
+}
+.download a{
+    width: 200px;
+    height: 45px;
+}
+.download a:hover{
+    width: 205px;
+    height: 50px;
+}
+.my-resume{
+    margin-top: 100px;
+    width: 100vw;
+
+}
+.resume-image{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+}
+.resume-image img{
+    background-color: white;
+    width: 70vw;
+}
+@media (max-width:490px) {
+    .main-resume{
+        width: 145vw;
+        height: 145vh;
+    }
+    .resume-content{
+        width: 145vw;
+        height: 1050px;
+    }
+    .my-resume{
+        width: 145vw;
+    }
+    .resume-image{
+        width: 145vw;
+    }
+    .resume-image img{
+        width: 115vw;
+    }
+}
+
